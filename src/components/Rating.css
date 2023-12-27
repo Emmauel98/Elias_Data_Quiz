@@ -1,0 +1,22 @@
+/* body{
+    background: linear-gradient(to top, #d38312, #a83279);
+    height: 100vh;
+} */
+.rating{
+    display: inline-block;
+}
+.rating input{
+    display: none;
+}
+.rating label{
+    float: right;
+    cursor: pointer;
+    color: #333;
+}
+.rating label::before{
+    content: '\2605';
+    font-size: 50px;
+}
+.rating input:checked~label{
+    color: #ffca08;
+}
